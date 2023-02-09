@@ -53,10 +53,10 @@ const OriMap = () => {
             <Marker
               pinColor={"red"}
               key={item.id} // データidをインデックスに
-              title={item.name}//要らない気もする
+              title={item.name} //要らない気もする
               coordinate={{
-                latitude: Number(item.latitude), // 緯度経度を数値型に変換
-                longitude: Number(item.longitude),
+                latitude: item.latitude, // 緯度経度を数値型に変換
+                longitude: item.longitude,
               }}
             >
               <View>
